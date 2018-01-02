@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0633974E560D19F90E56A967 /* Pods_CDReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A2DBB4942DB58D83442C3A /* Pods_CDReader.framework */; };
 		392CE17E1FF69E8600CE240D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392CE17D1FF69E8600CE240D /* AppDelegate.swift */; };
 		392CE1801FF69E8600CE240D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392CE17F1FF69E8600CE240D /* ViewController.swift */; };
 		392CE1831FF69E8600CE240D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392CE1811FF69E8600CE240D /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		392CE1841FF69E8600CE240D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392CE1871FF69E8600CE240D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392CE1891FF69E8600CE240D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1180C8F95F41D05B2D7CE6 /* Pods-CDReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDReader/Pods-CDReader.debug.xcconfig"; sourceTree = "<group>"; };
+		58A2DBB4942DB58D83442C3A /* Pods_CDReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF77249B49274627BDCF7AB /* Pods-CDReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDReader/Pods-CDReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0633974E560D19F90E56A967 /* Pods_CDReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				392CE17C1FF69E8600CE240D /* CDReader */,
 				392CE17B1FF69E8600CE240D /* Products */,
+				B909FFF712D1EF6BE7E94E2F /* Pods */,
+				AEE04AF16775F0C88A89CFB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = CDReader;
 			sourceTree = "<group>";
 		};
+		AEE04AF16775F0C88A89CFB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58A2DBB4942DB58D83442C3A /* Pods_CDReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B909FFF712D1EF6BE7E94E2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A1180C8F95F41D05B2D7CE6 /* Pods-CDReader.debug.xcconfig */,
+				BFF77249B49274627BDCF7AB /* Pods-CDReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 392CE18C1FF69E8600CE240D /* Build configuration list for PBXNativeTarget "CDReader" */;
 			buildPhases = (
+				F2E3B4AD9F21220C488A39B1 /* [CP] Check Pods Manifest.lock */,
 				392CE1761FF69E8600CE240D /* Sources */,
 				392CE1771FF69E8600CE240D /* Frameworks */,
 				392CE1781FF69E8600CE240D /* Resources */,
+				67A3A87EA0D48A18B697C3B4 /* [CP] Embed Pods Frameworks */,
+				2509B5C68B26D161D504EA9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,80 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2509B5C68B26D161D504EA9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDReader/Pods-CDReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A3A87EA0D48A18B697C3B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CDReader/Pods-CDReader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDReader/Pods-CDReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E3B4AD9F21220C488A39B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		392CE1761FF69E8600CE240D /* Sources */ = {
@@ -272,6 +373,7 @@
 		};
 		392CE18D1FF69E8600CE240D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A1180C8F95F41D05B2D7CE6 /* Pods-CDReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +388,7 @@
 		};
 		392CE18E1FF69E8600CE240D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF77249B49274627BDCF7AB /* Pods-CDReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
