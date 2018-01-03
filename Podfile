@@ -13,7 +13,6 @@ pod 'Kingfisher'
 pod 'Reusable'
 pod 'MJRefresh'
 pod 'MBProgressHUD'
-pod 'IQKeyboardManagerSwift'
-pod 'Alamofire'
 pod 'SwiftyJSON'
+
 end
