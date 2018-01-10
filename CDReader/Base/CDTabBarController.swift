@@ -17,7 +17,7 @@ class CDTabBarController: UITabBarController {
         
         let oneVC = CDBaseViewController()
         oneVC.view.backgroundColor = UIColor.random
-        addChildViewController(oneVC, title: "畅读书架", image: UIImage(named: "shelf"), selectedImage: UIImage(named: "shelf1"))
+        addChildViewController(oneVC, title: "畅读书城", image: UIImage(named: "shelf"), selectedImage: UIImage(named: "shelf1"))
         
         let twoVC = CDBaseViewController()
         twoVC.view.backgroundColor = UIColor.random
@@ -58,7 +58,7 @@ class CDTabBarController: UITabBarController {
 extension CDTabBarController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         guard let select = selectedViewController else {
-            return .default
+            return .`default`
         }
         return select.preferredStatusBarStyle
     }

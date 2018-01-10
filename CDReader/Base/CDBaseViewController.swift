@@ -52,7 +52,7 @@ class CDBaseViewController: UIViewController {
 
 extension CDBaseViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
+        return .`default`
     }
 }
 
