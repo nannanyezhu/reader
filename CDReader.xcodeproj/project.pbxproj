@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		0633974E560D19F90E56A967 /* Pods_CDReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A2DBB4942DB58D83442C3A /* Pods_CDReader.framework */; };
 		392CE17E1FF69E8600CE240D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392CE17D1FF69E8600CE240D /* AppDelegate.swift */; };
-		392CE1831FF69E8600CE240D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392CE1811FF69E8600CE240D /* Main.storyboard */; };
 		392CE1851FF69E8600CE240D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392CE1841FF69E8600CE240D /* Assets.xcassets */; };
-		392CE1881FF69E8600CE240D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392CE1861FF69E8600CE240D /* LaunchScreen.storyboard */; };
 		6B21AC741FFB63A700DA556C /* CDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21AC731FFB63A700DA556C /* CDNavigationController.swift */; };
 		6B21AC771FFB68FD00DA556C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21AC761FFB68FD00DA556C /* UIColorExtension.swift */; };
 		6B21AC791FFB87A600DA556C /* CDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21AC781FFB87A600DA556C /* CDBaseViewController.swift */; };
@@ -23,9 +21,7 @@
 /* Begin PBXFileReference section */
 		392CE17A1FF69E8600CE240D /* CDReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392CE17D1FF69E8600CE240D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		392CE1821FF69E8600CE240D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		392CE1841FF69E8600CE240D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		392CE1871FF69E8600CE240D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392CE1891FF69E8600CE240D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A1180C8F95F41D05B2D7CE6 /* Pods-CDReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDReader/Pods-CDReader.debug.xcconfig"; sourceTree = "<group>"; };
 		58A2DBB4942DB58D83442C3A /* Pods_CDReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,9 +97,7 @@
 		6B21AC7E1FFF719700DA556C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				392CE1811FF69E8600CE240D /* Main.storyboard */,
 				392CE1841FF69E8600CE240D /* Assets.xcassets */,
-				392CE1861FF69E8600CE240D /* LaunchScreen.storyboard */,
 				392CE1891FF69E8600CE240D /* Info.plist */,
 				6B21AC7A1FFB894E00DA556C /* Global.swift */,
 			);
@@ -170,7 +164,7 @@
 				TargetAttributes = {
 					392CE1791FF69E8600CE240D = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -197,9 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392CE1881FF69E8600CE240D /* LaunchScreen.storyboard in Resources */,
 				392CE1851FF69E8600CE240D /* Assets.xcassets in Resources */,
-				392CE1831FF69E8600CE240D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,25 +285,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		392CE1811FF69E8600CE240D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				392CE1821FF69E8600CE240D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		392CE1861FF69E8600CE240D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				392CE1871FF69E8600CE240D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		392CE18A1FF69E8600CE240D /* Debug */ = {
@@ -426,11 +399,15 @@
 			baseConfigurationReference = 4A1180C8F95F41D05B2D7CE6 /* Pods-CDReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CDReader/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yz.CDReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,11 +418,15 @@
 			baseConfigurationReference = BFF77249B49274627BDCF7AB /* Pods-CDReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CDReader/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yz.CDReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

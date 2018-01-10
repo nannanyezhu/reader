@@ -15,7 +15,7 @@ class CDTabBarController: UITabBarController {
 
         tabBar.isTranslucent = false
         
-        let oneVC = CDBaseViewController()
+        let oneVC = BookShelfVCtrl()
         oneVC.view.backgroundColor = UIColor.random
         addChildViewController(oneVC, title: "畅读书城", image: UIImage(named: "shelf"), selectedImage: UIImage(named: "shelf1"))
         
